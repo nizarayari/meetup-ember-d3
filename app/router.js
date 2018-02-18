@@ -7,6 +7,8 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('balances');
+  this.route('expenses');
 });
 
 export default Router;

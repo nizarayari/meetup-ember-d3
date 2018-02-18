@@ -1,7 +1,8 @@
 import Route from '@ember/routing/route';
+import $ from 'jquery';
 
 export default Route.extend({
-  beforeModel() {
-    this.transitionTo('balances')
+  model() {
+    return $.get('balances');
   }
 });
