@@ -47,5 +47,22 @@ module.exports = function(environment) {
     // here you can enable a production-specific feature
   }
 
+  ENV['ember-d3'] = {
+    only: [
+      'd3-selection',
+      'd3-scale',
+      'd3-collection',
+      'd3-interpolate',
+      'd3-color',
+      'd3-array',
+      'd3-axis',
+      'd3-format',
+      'd3-shape',
+      'd3-path',
+      'd3-time',
+      'd3-time-format'
+    ]
+  }
+
   return ENV;
 };

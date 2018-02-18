@@ -1,11 +1,4 @@
-
-{{#paper-tabs selected=currentRouteName borderBottom=true as |tabs|}}
-  {{#tabs.tab value="balances" href=(href-to "balances")}}
-    Balances
-  {{/tabs.tab}}
-  {{#tabs.tab value="expenses" href=(href-to "expenses")}}
-    Expenses
-  {{/tabs.tab}}
-{{/paper-tabs}}
-
-{{liquid-outlet class="md-padding"}}
+{{#link-to 'expenses'}}
+  expenses
+{{/link-to}}
+{{outlet}}
