@@ -1,5 +1,35 @@
 @import 'ember-paper';
 
+.tabs-container {
+  display:flex;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid #E7E6E1;
+
+  a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    line-height: 60px;
+    padding: 0 5px;
+
+    &:hover {
+      background-color: azure;
+    }
+
+    &.active {
+      border-bottom: 5px #00ADB5 solid;
+    }
+  }
+
+}
+
+rect:hover {
+  fill: #D80E70;
+}
+
 .bar-chart {
   height: 100vh;
 }

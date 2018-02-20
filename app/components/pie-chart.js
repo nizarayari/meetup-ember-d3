@@ -12,7 +12,7 @@ export default Component.extend({
     radius = Math.min(width, height) / 2;
 
     var color = scaleOrdinal()
-      .range(["#98abc5 ", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"])
+      .range(["#F9ED69", "#F08A5D", "#B83B5E", "#3D84A8", "#30E3CA"])
 
     var arcs = arc()
       .outerRadius(radius - 10)
@@ -43,6 +43,7 @@ var svg = select(this.$('svg')[0])
     .attr("transform", function (d) { return "translate(" + arcs.centroid(d) + ")"; })
     .attr("dy", ".35em")
     .style("text-anchor", "middle")
+    .style("fill", "#393E46")
     .text(function (d) { return d.data.category; });
   }
 });
